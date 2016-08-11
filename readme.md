@@ -1,0 +1,1 @@
+This is the repository for my Kotlin Java Talk, given on August 16th, 2016 at a devICT event at The Labor Party. I'll be posting the outline, sources for my research, the draft and final slides, and obviously link to the video of the presentation.
