@@ -1,0 +1,42 @@
+- Who am I?
+	Jacob Moore, Junior Developer at Applianz. Love my cats, games (MtG and Fighting games), learning new things.
+
+- Who is the audience?
+	Java developers, folks interested in Java.
+
+- Why are they coming?
+	They're coming to a devICT event to hear an interesting talk. I am the main attraction.
+
+- Will this be a keynote or more interactive?
+	A keynote. I want to cover the background and initial startup of Kotlin as a story, then get into the implementation details. Little/no live code.
+	
+- What questions will the audience want answered in this talk?
+	What is Kotlin?
+	What is its origin story?
+	What drove the creators to make it, when the JVM is so crowded already?
+	Who is working on Kotlin?
+	As a Java dev, why should I learn Kotlin?
+	As an Android dev, why should I learn Kotlin?
+	What does Kotlin do well?
+	What doesn't it do well?
+	How do I learn Kotlin?
+	
+http://www.oracle.com/technetwork/articles/java/breslav-1932170.html
+Good interview with Breslav
+
+http://www.drdobbs.com/jvm/language-of-the-month-kotlin/232600836?pgno=2
+Early writeup of Kotlin
+
+
+https://blog.jetbrains.com/kotlin/2011/07/
+Beginning of their blog
+
+https://github.com/JetBrains/Kotlin
+https://github.com/mcxiaoke/awesome-kotlin
+List of Kotlin resources, tools, libraries, etc.
+
+https://m.pardel.net/my-tips-for-when-speaking-at-a-conference-cb343aec5c8#.vuxy5o4lk
+http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html
+http://presentationzen.blogs.com/presentationzen/2005/09/living_large_ta.html
+http://wunder.schoenaberselten.com/2016/02/16/how-to-prepare-and-write-a-tech-conference-talk/
+http://scottberkun.com/2011/speakers-checklist/
