@@ -27,6 +27,20 @@ Good interview with Breslav
 http://www.drdobbs.com/jvm/language-of-the-month-kotlin/232600836?pgno=2
 Early writeup of Kotlin
 
+https://www.youtube.com/watch?v=POZmfjRHdfE
+Breslav Good opening slides
+
+You can do better with Kotlin
+Svetlana Isakova - https://www.youtube.com/watch?v=bVuhlusXdZ4
+"The Kotlin programming language is gaining popularity amongst the Android developer community. ItÅfs a modern language that gives more power in everyday routines. Kotlin code generally looks cleaner and nicer, and itÅfs much easier to work with when you have less verbosity or code duplication. And this is especially noticeable comparing with the soon-to-be-archaic versions of Java used on Android.
+
+But whatÅfs even more important, is that Kotlin is 100% compatible with all existing Java frameworks, and has good tooling in Android Studio and IntelliJ IDEA. ItÅfs a pragmatic language with a very low learning curve, and can be quickly grasped by Java developers.
+
+In this talk we'll discuss the concepts of the language that provide the desired expressiveness, as well as additional goodies designed specifically for Android."
+
+https://www.youtube.com/watch?v=AhA-Q7MOre0
+functional programming in kotlin - demo of higher level functions, map/filter. Great simple explanation of higher level functions.
+
 
 https://blog.jetbrains.com/kotlin/2011/07/
 Beginning of their blog

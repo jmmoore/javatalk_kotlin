@@ -1,0 +1,5 @@
+Speech
+
+1. "Hi, I'm Jacob Moore. I'm a Junior Developer at Applianz. I love my wife [slide], my cats [slide], competitive games [slide], "If any of you lead lives as exciting as mine and watch ESPN2 on Sunday nights hoping for lumberjack competitions or old karate may have seen Street Fighter on there a few weeks ago."
+
+2. 	"I'm here tonight to tell you about Kotlin, a concise, pragmatic language on the JVM with expressive syntax, strong interoperability with Java, easy access to higher-order functions and 

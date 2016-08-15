@@ -1,0 +1,63 @@
+Kotlin: The Best Thing to Come From St. Petersburg since Nabokov
+
+1. Who am I?
+	
+2. Why am I here?
+3. devICT events
+4. Kotlin: A short history
+	- St Petersburg
+	- IntelliJ IDEA
+	- 2011
+	- 1.0 in February
+	- Fully open source
+5. TL;DR 
+	- This is of interest to:
+		- anyone who uses Go, Python, Ruby, Scala, Java
+		- Android developers
+		- Folks who want to dip their toe into functional concepts in a somewhat familiar space
+	- How to learn it
+		- try.kotlinlang.org
+			- Basic syntax walkthrough
+			- Kotlin Koans
+		- Kotlin in Action
+			- 21 bucks from Manning with '39jemerov' code
+		- Udemy - Kotlin Programming: Next Level Java Development
+			- Aimed at beginners
+			- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
+6. Pragmatic, Expressive, Concise
+7. Pragmatic
+	- Strong interop with Java
+		- Compiles to Bytecode, can make code literally with only JDK and Kotlin stdlib
+			- Small addition to project, 7.5k lines
+		- Can call Kotlin directly from Java, and vice versa
+		- Can convert Java classes directly to Kotlin (and it works!)
+	- Compiles to Java 6 bytecode, effectively porting some Java 8/9 features to Android
+		- Lambdas
+8. Concise
+	- Basic Java Class -> Kotlin One-Liner
+		- Watch Svetlana's talk for this
+	- Data Class
+	- Inferred types
+	
+	- When
+	- To
+	- Pair
+
+9. Expressive
+	- typealias
+	- infix
+	- var vs val
+	
+10. Features
+	- Checks for nullability at compile-time, not run-time
+		- I work on legacy code and this is my most common exception.
+		- Elvis operator
+		- ?
+		- !!
+		- Looks in Java like @nullable and @nonnullable
+	- Functional stuff
+		- map
+		- filter
+		- libraries for currying, etc
+		- https://www.youtube.com/watch?v=AhA-Q7MOre0
+		
