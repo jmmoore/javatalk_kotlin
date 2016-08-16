@@ -1,5 +1,9 @@
 Speech
 
-1. "Hi, I'm Jacob Moore. I'm a Junior Developer at Applianz. I love my wife [slide], my cats [slide], competitive games [slide], "If any of you lead lives as exciting as mine and watch ESPN2 on Sunday nights hoping for lumberjack competitions or old karate may have seen Street Fighter on there a few weeks ago."
+1. "Hi, I'm Jacob Moore. I'm a Junior Developer at Applianz. We do custom Windows virtualization for companies who need desktop software accessible from anywhere."
 
-2. 	"I'm here tonight to tell you about Kotlin, a concise, pragmatic language on the JVM with expressive syntax, strong interoperability with Java, easy access to higher-order functions and 
+"I'll tell you a bit about myself. [slide] I love my wife, Katie. In a couple of weeks we'll be celebrating our first anniversary. [slide] I love our cats, [slide] and I really love competitive games. I've been running a competitive Magic the Gathering league for nearly three years, and regularly participate in local and regional Street Fighter tournaments."
+ 
+"If any of you lead lives as exciting as mine, you watch ESPN2 on Sunday nights hoping for lumberjack competitions or old karate. If you were tuned in a few weeks ago, you may have seen Street Fighter in a huge arena in Las Vegas. Video games on television? Not as crazy as it used to be."
+
+"But you all aren't here to listen to me ramble about my action-packed home life. [slide] I'm here tonight to tell you about Kotlin, a concise, pragmatic language on the JVM with strong interoperability with Java, and easy access to higher-order functions.

@@ -1,16 +1,16 @@
-Kotlin: The Best Thing to Come From St. Petersburg since Nabokov
+Kotlin: From Russia with... Nice Syntax
 
-1. Who am I?
-	
-2. Why am I here?
-3. devICT events
-4. Kotlin: A short history
+01. Who am I?
+02. Why am I here?
+03. devICT events
+04. Kotlin: A short history
 	- St Petersburg
+		- Kotlin Island
 	- IntelliJ IDEA
 	- 2011
 	- 1.0 in February
 	- Fully open source
-5. TL;DR 
+05. TL;DR 
 	- This is of interest to:
 		- anyone who uses Go, Python, Ruby, Scala, Java
 		- Android developers
@@ -24,40 +24,71 @@ Kotlin: The Best Thing to Come From St. Petersburg since Nabokov
 		- Udemy - Kotlin Programming: Next Level Java Development
 			- Aimed at beginners
 			- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
-6. Pragmatic, Expressive, Concise
-7. Pragmatic
-	- Strong interop with Java
-		- Compiles to Bytecode, can make code literally with only JDK and Kotlin stdlib
-			- Small addition to project, 7.5k lines
-		- Can call Kotlin directly from Java, and vice versa
-		- Can convert Java classes directly to Kotlin (and it works!)
-	- Compiles to Java 6 bytecode, effectively porting some Java 8/9 features to Android
-		- Lambdas
-8. Concise
+06. Who is using Kotlin?
+    - JetBrains (obviously)
+        - Over 500K lines of Kotlin in production
+        - Several new modules of IntelliJ IDEA written fully in Kotlin
+    - Basecamp
+    - Expedia
+    - Netflix
+    - Square
+    - Google
+07. Pragmatic
+    - Strong interop with Java
+	- Compiles to Bytecode, can make code literally with only JDK and Kotlin stdlib
+            - Small addition to project, 7.5k lines
+	- Can call Kotlin directly from Java, and vice versa
+	- Can convert Java classes directly to Kotlin (and it works!)
+        - Uses existing Java libraries as much as possible
+            - Collections, for example
+    - Compiles to Java 6 bytecode, effectively porting some Java 8/9 features to Android
+	- Lambdas
+    - Not attempting to reinvent the wheel
+        - Focusing on using features that already work in other langs
+    - Doesn't force one paradigm
+        - Mixing functional and imperative is easy
+    - Focus on good tooling
+        - As you'd expect from a company that makes IDEs and compilers
+        - Kotlin plugin for IDEA is fantastic
+08. Concise
 	- Basic Java Class -> Kotlin One-Liner
 		- Watch Svetlana's talk for this
 	- Data Class
+            - A lot of boilerplate is made implicit in Kotlin.
 	- Inferred types
-	
 	- When
 	- To
 	- Pair
-
-9. Expressive
-	- typealias
-	- infix
-	- var vs val
-	
-10. Features
-	- Checks for nullability at compile-time, not run-time
-		- I work on legacy code and this is my most common exception.
-		- Elvis operator
-		- ?
-		- !!
-		- Looks in Java like @nullable and @nonnullable
-	- Functional stuff
-		- map
-		- filter
-		- libraries for currying, etc
-		- https://www.youtube.com/watch?v=AhA-Q7MOre0
-		
+09. Safe
+    - Checks for nullability at compile-time, not run-time
+	- I work on legacy code and this is my most common exception.
+	- Elvis operator
+	- ?
+	- !!
+	- Looks in Java like @nullable and @nonnullable
+    - Smart Casts
+    - 
+10. Other Neat Features
+    - Functional stuff
+	- map
+	- filter
+	- libraries for currying, etc
+	- https://www.youtube.com/watch?v=AhA-Q7MOre0
+    - Built-in DSLs
+        - SQL (Exposed)
+        - HTML generation
+11. What's coming soon?
+    - Better interoperability with Java tools
+        - Greater Spring support in the IDE
+        - Gradle 
+    - Greater support for JS runtimes
+    - Kotlin scripts (.kts)
+12. How to get involved?
+    - KEEP
+        - github.com/Kotlin/KEEP
+        - Kotlin Evolution and Enhancement Process
+        - Proposals from JB and Community
+        - Feedback and Discussions
+    - 
+13. Outro
+    - 

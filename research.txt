@@ -54,3 +54,14 @@ http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html
 http://presentationzen.blogs.com/presentationzen/2005/09/living_large_ta.html
 http://wunder.schoenaberselten.com/2016/02/16/how-to-prepare-and-write-a-tech-conference-talk/
 http://scottberkun.com/2011/speakers-checklist/
+
+Gradle
+    - Pain points
+        - Anemic IDE integration
+        - Scaling build logic
+    - Kotlin solves these
+        - Easy to make DSLs
+        - Scripting friendly
+        - Extension methods
+    - Support for build files in Kotlin is in Milestone 1
+
