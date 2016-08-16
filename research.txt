@@ -41,6 +41,7 @@ In this talk we'll discuss the concepts of the language that provide the desired
 https://www.youtube.com/watch?v=AhA-Q7MOre0
 functional programming in kotlin - demo of higher level functions, map/filter. Great simple explanation of higher level functions.
 
+https://medium.com/@octskyward/why-kotlin-is-my-next-programming-language-c25c001e26e3
 
 https://blog.jetbrains.com/kotlin/2011/07/
 Beginning of their blog

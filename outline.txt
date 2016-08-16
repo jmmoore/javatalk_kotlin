@@ -10,29 +10,7 @@ Kotlin: From Russia with... Nice Syntax
 	- 2011
 	- 1.0 in February
 	- Fully open source
-05. TL;DR 
-	- This is of interest to:
-		- anyone who uses Go, Python, Ruby, Scala, Java
-		- Android developers
-		- Folks who want to dip their toe into functional concepts in a somewhat familiar space
-	- How to learn it
-		- try.kotlinlang.org
-			- Basic syntax walkthrough
-			- Kotlin Koans
-		- Kotlin in Action
-			- 21 bucks from Manning with '39jemerov' code
-		- Udemy - Kotlin Programming: Next Level Java Development
-			- Aimed at beginners
-			- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
-06. Who is using Kotlin?
-    - JetBrains (obviously)
-        - Over 500K lines of Kotlin in production
-        - Several new modules of IntelliJ IDEA written fully in Kotlin
-    - Basecamp
-    - Expedia
-    - Netflix
-    - Square
-    - Google
+
 07. Pragmatic
     - Strong interop with Java
 	- Compiles to Bytecode, can make code literally with only JDK and Kotlin stdlib
@@ -67,7 +45,6 @@ Kotlin: From Russia with... Nice Syntax
 	- !!
 	- Looks in Java like @nullable and @nonnullable
     - Smart Casts
-    - 
 10. Other Neat Features
     - Functional stuff
 	- map
@@ -90,5 +67,28 @@ Kotlin: From Russia with... Nice Syntax
         - Proposals from JB and Community
         - Feedback and Discussions
     - 
+05. TL;DR 
+	- This is of interest to:
+		- anyone who uses Go, Python, Ruby, Scala, Java
+		- Android developers
+		- Folks who want to dip their toe into functional concepts in a somewhat familiar space
+	- How to learn it
+		- try.kotlinlang.org
+			- Basic syntax walkthrough
+			- Kotlin Koans
+		- Kotlin in Action
+			- 21 bucks from Manning with '39jemerov' code
+		- Udemy - Kotlin Programming: Next Level Java Development
+			- Aimed at beginners
+			- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
+06. Who is using Kotlin?
+    - JetBrains (obviously)
+        - Over 500K lines of Kotlin in production
+        - Several new modules of IntelliJ IDEA written fully in Kotlin
+    - Basecamp
+    - Expedia
+    - Netflix
+    - Square
+    - Google
 13. Outro
     - 
