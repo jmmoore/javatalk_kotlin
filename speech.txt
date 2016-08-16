@@ -23,7 +23,7 @@ The goals of the project, briefly:
 
 [Pragmatic] First, pragmatism. Kotlin was from the very beginning designed to be strongly interoperable with Java. You can write Kotlin that easily calls into Java, and write Java that easily calls into Kotlin. In fact, the Kotlin standard runtime is mostly extensions to the Java standard library. It uses existing libraries as much as possible, in Collections for example. This means that adding Kotlin to your codebase will add little to no runtime overhead. This is especially important for Android developers.
 
-[Java 6] Kotlin targets Java 6, so if you're an Android dev, or your deployment makes upgrading to a newer JVM difficult, it is possible to get access to a lot of the features in Java 8 and 9 using Kotlin. (The Kotlin team is working on targeting Java 8 and 9. Many things (like streams) work already.)
+[Java 6] Kotlin generates bytecode which is compatible with Java 6 or newer, so if you're an Android dev, or your deployment makes upgrading to a newer JVM difficult, it is possible to get access to a lot of the features in Java 8 and 9 using Kotlin. (The Kotlin team is working on targeting Java 8 and 9. Many things (like streams) work already.)
 
 [First Class] As you'd expect from a language written by an IDE producer, Kotlin's tooling is great. Code can be auto-completed and refactored just as if you were using Java. JetBrains has also written a 'Convert Java to Kotlin' refactoring option for IDEA. It doesn't always produce idiomatic Kotlin code, but it allows for an easier transition to the language. Having difficulty expressing something in Kotlin? Write it in Java, use the conversion tool, and you'll get some Kotlin code that compiles!
 
@@ -37,7 +37,9 @@ The goals of the project, briefly:
 
 [Basic Kotlin Class] Don't be alarmed, this is actually the entire class. All of the stuff we saw in the previous slide is still here. Kotlin generates a constructor and getters and keeps them behind the scenes. Also of note here is the /val/ keyword. Kotlin uses val and var to declare read-only Values and mutable Variables.
 
-[Kotlin Data Class] We have another modifier for classes. When we define a class as a 'data class', the compiler generates some useful methods for us, like equals, hashCode, and toString. Another example of how by hiding the boilerplate and generating it automatically, Kotlin allows us to focus on what is truly important: Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
+[Kotlin Data Class] We have another modifier for classes. When we define a class as a 'data class', the compiler generates some useful methods for us, like equals, hashCode, and toString. Another example of how by hiding the boilerplate and generating it automatically, Kotlin allows us to focus on what is truly important: 
+
+Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
 
 [Java updateWeather] Let's do another example, that will show off some other features of Kotlin. Take this method, for example. You may quibble with the numbers, but we're taking in a temperature and assigning values to variables based on that temperature. freezing to blue, mild to yellow, et cetera. Let's convert it to Kotlin and see what we get.
 
@@ -59,6 +61,24 @@ The goals of the project, briefly:
 
 [Under the Hood] Briefly, I'll speak about how all of this is handled by the Java bytecode. They're simply annotations. Nullable types have the @Nullable flag, other types have the @NotNull flag.
 
-[Bits and Bobs] Having covered a lot of the big things that set Kotlin apart, before I wrap up I'll touch on a couple of other nice things that Kotlin has to offer.
+[Bits and Bobs] Having covered a lot of the big things that set Kotlin apart, before I wrap up I'll do quick hits on a few other nice things that Kotlin has to offer.
 
-[Higher-Order Functions] 
+[Higher-Order Functions] I won't cover this at length, but Kotlin implements quite a few functional constructs in its standard library. Lambdas are supported, as is inlining higher-order functions.
+
+[DSLs/Library Support] Kotlin's concise syntax and support of things like C#-style extension functions and operator overloading give Kotlin a leg up when it comes to internal DSLs. DSLs exist for Android UI development (anko), SQL database manipulation/creation (Exposed), and HTML generation (kotlinx.html). There are build frameworks, documentation engines, dependency injection libraries, HTML libraries, Testing libraries, everything under the sun. Obviously you're not getting the firehose that is searching for Java libraries, but there's a reasonable amount of support for the language.
+
+[Coming Soon] Kotlin's developers have big aspirations for the language. Early on in its development an attempt was made to compile Kotlin code to JavaScript. That functionality was back-burnered in order to prioritize the 1.0 release, but the project now has returned from dormancy. They intend to support as many JS runtimes/frameworks/toolchains as they can.
+
+[Get involved!] Kotlin is a growing but still relatively small language. There is a lot to do, and the team welcomes contributors. They have a slack (http://kotlinslackin.herokuapp.com/), an open issues list, and tips on how to contribute. The JavaScript translation in particular could use some help. The coolest thing you can do in my opinion is to take a small piece of the Java codebase you work on in your job and convert it to Kotlin! The overhead is almost nil, you'll be refactoring into easier to read, easier to review code.
+
+[How to learn]
+	- try.kotlinlang.org
+		- Basic syntax walkthrough
+		- Kotlin Koans
+	- Kotlin in Action
+		- 21 bucks from Manning with '39jemerov' code
+	- Udemy - Kotlin Programming: Next Level Java Development
+		- Aimed at beginners
+		- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
+
+[Outro] 
