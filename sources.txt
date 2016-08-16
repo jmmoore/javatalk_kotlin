@@ -1,0 +1,38 @@
+Sources/References
+
+Articles/Slides - 
+
+https://medium.com/@octskyward/why-kotlin-is-my-next-programming-language-c25c001e26e3
+Mike Hearn - Why Kotlin is My Next Programming Language
+
+http://www.oracle.com/technetwork/articles/java/breslav-1932170.html
+April 2013 - Interview with Andrey Breslav
+
+https://blog.jetbrains.com/kotlin/2011/07/slides-from-the-jvm-language-summit-presentations/
+Initial Kotlin Presentation Slides
+
+https://blog.jetbrains.com/kotlin/2011/08/why-jetbrains-needs-kotlin/
+Why JetBrains Needs Kotlin - Useful for finding exact motivation behind designing a new programming language.
+
+Videos/Talks - 
+
+https://www.youtube.com/watch?v=POZmfjRHdfE
+May 2016 - Andrey Breslav at Kotlin Night SF - Kotlin: Where We Stand and What's Next
+
+https://www.youtube.com/watch?v=bVuhlusXdZ4
+2016 - Svetlana Isakova - You can do better with Kotlin
+
+https://www.youtube.com/watch?v=AhA-Q7MOre0
+Mike Hearn - Functional Programmming in Kotlin
+
+Books/Other
+
+Kotlin in Action
+Dmitry Jemerov and Svetlana Isakova
+manning.com/books/kotlin-in-action
+
+https://github.com/JetBrains/Kotlin
+official repo. hard to go wrong here.
+
+https://github.com/mcxiaoke/awesome-kotlin
+Big List of Kotlin resources, tools, libraries, etc.
