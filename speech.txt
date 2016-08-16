@@ -4,11 +4,11 @@ Hi, I'm Jacob Moore. [slide] I'm a Junior Developer at Applianz. We do custom Wi
 
 I'll tell you a bit about myself. [slide] I love my wife, Katie. In a couple of weeks we'll be celebrating our first anniversary. [slide] I love our cats, [slide] and I really love competitive games. I've been running a competitive Magic the Gathering league for nearly three years, and regularly participate in local and regional Street Fighter tournaments.
  
-If any of you lead lives as exciting as mine, you watch ESPN2 on Sunday nights hoping to see lumberjack competitions or old karate. If you were tuned in a few weeks ago, you may have seen Street Fighter in a huge arena in Las Vegas. Video games on television? Not as crazy as it used to be.
+[ESPN2 Evo] If any of you lead lives as exciting as mine, you watch ESPN2 on Sunday nights hoping to see lumberjack competitions or old karate. If you were tuned in a few weeks ago, you may have seen Street Fighter in a huge arena in Las Vegas. Video games on television? Not as crazy as it used to be.
 
-But you all aren't here to listen to me ramble about my action-packed home life. [slide] I'm here tonight to tell you about Kotlin, a concise, pragmatic, statically-typed language on the JVM. I'll cover all of those verbs soon. First, a little history.
+[Kotlin Logo] But you all aren't here to listen to me ramble about my action-packed home life. You're here for a Java Talk! I'm here tonight to tell you about Kotlin, a concise, pragmatic, statically-typed language on the JVM. I'll cover all of those verbs soon. First, a little history.
 
-In 2011, JetBrains undertook an effort to create their own programming language. After evaluating the other JVM languages available, the company determined that they needed their own language to overcome some of Java's limitations. So the St. Petersburg office started a team and named the language after this island, which sits just off of the city's coast. They develop completely in the open; they host the language on a public GitHub repo. In February of this year, the Kotlin team declared the language ready for a 1.0 release.
+In 2011, JetBrains undertook an effort to create their own programming language. After evaluating the other JVM languages available, the company determined that they needed their own language to overcome some of Java's limitations. So the St. Petersburg office started a team and named the language after this island, Kotlin Island, which sits just off of the city's coast. They develop completely in the open, hosting the language on a public GitHub repo. In February of this year, the Kotlin team declared the language ready for a 1.0 release.
 
 The goals of the project, briefly: 
 - Full Java Interoperability
@@ -17,29 +17,35 @@ The goals of the project, briefly:
 - More Concise than Java
 - Easier to learn than Scala
 
-[Mike Hearn] I became aware of it a couple months ago because of a Medium post by Mike Hearn called 'Why Kotlin is my next programming language'. In the post, Hearn details a number of the things I'm going to cover tonight. I found his case persuasive enough that I started working through the tutorial, reading the reference docs, and thinking about how to use Kotlin in my personal projects as well as in my day job.
+[Mike Hearn] I became aware of it a couple months ago because of a Medium post by Mike Hearn called 'Why Kotlin is my next programming language'. In the post, Hearn advocates for a look into the language by bringing to light a number of things, including many I'm going to cover tonight. I found his case persuasive enough that I started working through the tutorial, reading the reference docs, and thinking about how to use Kotlin in my personal projects as well as in my day job.
 
-[3 words slides] The creators of Kotlin repeatedly use the same three verbs to describe the language: Pragmatic, Concise, and Safe. Like a real Kotlin dev, I decided not to reinvent the wheel and center the more technical parts of my talk around these three words.
+[3 words slides] The creators and maintainers of Kotlin repeatedly use the same three verbs to describe the language: Pragmatic, Concise, and Safe. Like a true Kotlin dev, I decided not to reinvent the wheel and center the more technical parts of my talk around these three words.
 
-[Pragmatic] First, pragmatism. Kotlin was from the very beginning designed to be strongly interoperable with Java. You can write Kotlin that easily calls into Java, and write Java that easily calls into Kotlin. In fact, the Kotlin standard runtime is mostly extensions to the Java standard library. It uses existing libraries as much as possible, in Collections for example. This means that adding Kotlin to your codebase will add little to no runtime overhead. This is especially important for Android developers.
+[Pragmatic] First, pragmatism. 
+
+[Interoperable] Kotlin was from the very beginning designed to be strongly interoperable with Java. You can write Kotlin that easily calls into Java, and write Java that easily calls into Kotlin. 
+
+[Convert Java] JetBrains has also written a 'Convert Java to Kotlin' refactoring option for IDEA. Having difficulty expressing something in Kotlin? Write it in Java, use the conversion tool, and you'll get some Kotlin code that compiles! It doesn't always produce idiomatic Kotlin, as we'll see later, but it cal allow for an easier transition to the language. 
 
 [Java 6] Kotlin generates bytecode which is compatible with Java 6 or newer, so if you're an Android dev, or your deployment makes upgrading to a newer JVM difficult, it is possible to get access to a lot of the features in Java 8 and 9 using Kotlin. (The Kotlin team is working on targeting Java 8 and 9. Many things (like streams) work already.)
 
-[First Class] As you'd expect from a language written by an IDE producer, Kotlin's tooling is great. Code can be auto-completed and refactored just as if you were using Java. JetBrains has also written a 'Convert Java to Kotlin' refactoring option for IDEA. It doesn't always produce idiomatic Kotlin code, but it allows for an easier transition to the language. Having difficulty expressing something in Kotlin? Write it in Java, use the conversion tool, and you'll get some Kotlin code that compiles!
+[First Class] As you'd expect from a language written by an IDE producer, Kotlin's tooling is great. Code can be auto-completed and refactored just as if you were using Java. Combining Java and Kotlin files in the same project is trivial. Debugging these mixed-language projects also works. The feeling that you get the first time you step from a Java class into a Kotlin extension method is hard to describe. It's like reading a Stephen King novel in middle school. You shouldn't be allowed to do it. 
 
-[No True Way] There's no one way to write Kotlin. The language allows the mixing of functional and imperative styles of coding without fuss. This allows developers like me, who are less familiar with the functional paradigm, to dip our toes in the water so to speak. You can apply a map or a filter to your functions without feeling like you have to learn Scala or Haskell.
+[No True Way] There's no one way to write Kotlin. The language allows the mixing of functional and imperative styles of coding without fuss. This allows developers like me, who are less familiar with the functional paradigm, to dip our toes in the water so to speak. You can apply higher order functions to your functions without feeling like you have to learn Scala or Haskell.
 
-[Nothing New] Kotlin doesn't do anything particularly revolutionary. Lots of languages combine functional and imperative styles, among other things. The Kotlin team has no qualms about admitting that they have cribbed features from a variety of different languages. What they /have/ done, is combine these elements in a neat package that is easy to read, write, and understand.
+[Not a Revolution] Kotlin doesn't do anything particularly novel. Lots of languages combine functional and imperative styles, hide autogenerated code, compile to JavaScript. The Kotlin team has no qualms about admitting that they have cribbed features from a variety of different languages. What they /have/ done, is combine these elements in a small package that is easy to read, write, and understand.
 
-[Concise] Next, let's talk about concision. Kotlin has a lot of features that take care of boilerplate and repetitive code for you. For instance...
+[Concise] Speaking of small things, let's talk about concision.
 
-[Basic Java Class] Take a look at this class. Very straightforward. We have a class, a couple of fields, a constructor, and getters. This class doesn't actually do anything, it just holds data. Let's see what this same class looks like in Kotlin.
+[Tiny stdlib] The Kotlin runtime is tiny. Combined with the standard library, they weigh in together at just under a megabyte. They use existing Java libraries as much as possible, and the team has written extension methods to serve Kotlin-specific purposes. This means that adding Kotlin to your codebase adds little to no runtime overhead. This is especially important for Android developers, as every piece of storage means a lot. This is why the Kotlin team is working even now to make intelligent reductions in the standard library, reducing internal methods without changing functionality.
 
-[Basic Kotlin Class] Don't be alarmed, this is actually the entire class. All of the stuff we saw in the previous slide is still here. Kotlin generates a constructor and getters and keeps them behind the scenes. Also of note here is the /val/ keyword. Kotlin uses val and var to declare read-only Values and mutable Variables.
+[Basic Java Class] Kotlin has a lot of features that take care of boilerplate and repetitive code for you. For instance, take a look at this. Very straightforward. We have a class, a couple of fields, a constructor, and getters. This class doesn't actually do anything, it just holds data. Let's see what this same class looks like in Kotlin.
+
+[Basic Kotlin Class] Don't be alarmed, this is actually the entire class. All of the stuff we saw in the previous slide is still here. Kotlin generates a constructor and getters and keeps them behind the scenes. Notice the /val/ keyword. Kotlin uses val and var to declare read-only Values and mutable Variables, making the functional style much more viable.
 
 [Kotlin Data Class] We have another modifier for classes. When we define a class as a 'data class', the compiler generates some useful methods for us, like equals, hashCode, and toString. Another example of how by hiding the boilerplate and generating it automatically, Kotlin allows us to focus on what is truly important: 
 
-Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
+[Reddit/HN] Browsing Hacker News and r/Programming. Kidding. Obviously.
 
 [Java updateWeather] Let's do another example, that will show off some other features of Kotlin. Take this method, for example. You may quibble with the numbers, but we're taking in a temperature and assigning values to variables based on that temperature. freezing to blue, mild to yellow, et cetera. Let's convert it to Kotlin and see what we get.
 
@@ -47,11 +53,13 @@ Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
 
 [K2] This is better. You'll notice there are no return statements. In Kotlin, if always returns a value. For this reason there is no ternary operator in Kotlin. (condition ? then : else) We can do a couple more things to bring this into a more Kotlin-like state. First, do we really need those types? Kotlin is statically typed, so every expression has a type. However, the compiler is very good at inferring types for you. Therefore, we can...
 
-[K3] Omit those types. You can explicitly define them if you want, for readability or familiarity, but in the vast majority of cases, the types can be left out. Now we're left with this. Some of you have probably been squirming in your chairs, waiting for me to use a switch case. Well, you're right! Mostly. Kotlin uses a 'when' expression to handle a switch operator. Let's take a look at the when statement.
+[K3] Omit those types. You can explicitly define them if you want, for readability or just personal preference, but in the vast majority of cases the types can be left out. Now we're left with this. Some of you have probably been squirming in your chairs, waiting for me to use a switch case. Well, you're right! Mostly. Kotlin uses a 'when' expression to handle a switch operator. Let's take a look at the when statement.
 
-[K4] Now this we can work with! We've got syntax similar to a switch case, using the rightward arrow to indicate our return values. Now I did something without telling you. I've converted our Pair(x,y) statements into statements that use this 'to' thing. To is merely an infix operator that combines the values on either side of it into a pair. It took a little bit of work but we've turned this admittedly suboptimal bit of Java code into a nice piece of idiomatic Kotlin.
+[K4] Now this we can work with! We've got syntax similar to a switch case, using the rightward arrow to indicate our return values. Now I did something without telling you. I've converted our Pair(x,y) statements into statements that use this 'to' thing. 
 
-[Safety] Last but not least, safety. I work with a lot of older Java in my day-to-day. Can you guess which exception gives me the most headaches? [wait] Yes, the dreaded Null Pointer Exception, the so-called 'Billion Dollar Mistake'. Let's talk about how Kotlin handles values being null.
+[Scroll down] To is merely an infix operator that combines the values on either side of it into a pair. It took a little bit of work, but we've turned this Java function into a nice piece of idiomatic Kotlin.
+
+[Safety] Finally, let's talk about safety. I work with a lot of older Java in my day job. Can you guess which exception gives me the most headaches? [wait] Yes, the dreaded Null Pointer Exception, the so-called 'Billion Dollar Mistake'. I think that's a bit overblown, but I shy away from hyperbole in general. Nonetheless, it can be a major  in a lot of projects. Let's talk about how Kotlin handles values being null.
 
 [With or Without] Because of Kotlin's tight connection to Java, it couldn't do away with null references in the way languages like Haskell and Erlang. Therefore, the Kotlin team took a different approach: Check for problems with null values at compile time, not at runtime. Let's take a look at exactly what I mean by this.
 
@@ -63,15 +71,13 @@ Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
 
 [Bits and Bobs] Having covered a lot of the big things that set Kotlin apart, before I wrap up I'll do quick hits on a few other nice things that Kotlin has to offer.
 
-[Higher-Order Functions] I won't cover this at length, but Kotlin implements quite a few functional constructs in its standard library. Lambdas are supported, as is inlining higher-order functions.
+[Higher-Order Functions] I won't cover this at length, but Kotlin implements quite a few functional constructs in its standard library: map, filter, reduce, and more. Lambdas are supported, as is inlining higher-order functions.
 
 [DSLs/Library Support] Kotlin's concise syntax and support of things like C#-style extension functions and operator overloading give Kotlin a leg up when it comes to internal DSLs. DSLs exist for Android UI development (anko), SQL database manipulation/creation (Exposed), and HTML generation (kotlinx.html). There are build frameworks, documentation engines, dependency injection libraries, HTML libraries, Testing libraries, everything under the sun. Obviously you're not getting the firehose that is searching for Java libraries, but there's a reasonable amount of support for the language.
 
-[Coming Soon] Kotlin's developers have big aspirations for the language. Early on in its development an attempt was made to compile Kotlin code to JavaScript. That functionality was back-burnered in order to prioritize the 1.0 release, but the project now has returned from dormancy. They intend to support as many JS runtimes/frameworks/toolchains as they can.
+[Coming Soon] Kotlin's developers have big aspirations for the language. Moving forward, they're aiming to improve Kotlin's tooling support with Java frameworks like Spring and Gradle. The team is also working on supporting Android Lint checks, as a large number of Android code violation only surfaces in the linting process. Early on in its development an attempt was made to compile Kotlin code to JavaScript. That functionality was back-burnered in order to prioritize the 1.0 release, but the project now has returned from dormancy. They intend to support as many JS runtimes/frameworks/toolchains as they can.
 
-[Get involved!] Kotlin is a growing but still relatively small language. There is a lot to do, and the team welcomes contributors. They have a slack (http://kotlinslackin.herokuapp.com/), an open issues list, and tips on how to contribute. The JavaScript translation in particular could use some help. The coolest thing you can do in my opinion is to take a small piece of the Java codebase you work on in your job and convert it to Kotlin! The overhead is almost nil, you'll be refactoring into easier to read, easier to review code.
-
-[How to learn]
+[How to Learn]
 	- try.kotlinlang.org
 		- Basic syntax walkthrough
 		- Kotlin Koans
@@ -81,4 +87,6 @@ Browsing Hacker News and r/Programming. (Kidding. Obviously. :D)
 		- Aimed at beginners
 		- Half off here: https://www.udemy.com/kotlin-course/?couponCode=AMAZINGREADERS25
 
-[Outro] 
+[Get Involved!] Kotlin is a growing but still relatively small language. There is a lot to do, and the team welcomes contributors. They have a slack, a big GitHub repo with lots of open issues and tips on how to contribute. According to their page, the JS translation bits in particular could use some help. There's also KEEP, the Kotlin Evolution and Enhancement Process. JetBrains has started a GitHub repository for storing proposals and feature requests from inside their company and from external users. As a new developer, I've spent most of my time learning languages that feel very set in their ways, monolithic things that are slow to change. It is really refreshing to be part of a community where I feel like our individual use cases can make a substantive difference in the course of a language's development.
+
+[Use it!] Finally, the coolest thing you can do with Kotlin in my opinion is to use it in production!  Write some tests, or take a small piece of Java that you maintain and convert it to Kotlin. You'll be learning a lot with not a lot of risk, and potentially contributing an important use case to the development of the language!

@@ -48,7 +48,7 @@ Beginning of their blog
 
 https://github.com/JetBrains/Kotlin
 https://github.com/mcxiaoke/awesome-kotlin
-List of Kotlin resources, tools, libraries, etc.
+Big List of Kotlin resources, tools, libraries, etc.
 
 https://m.pardel.net/my-tips-for-when-speaking-at-a-conference-cb343aec5c8#.vuxy5o4lk
 http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html
