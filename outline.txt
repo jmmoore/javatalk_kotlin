@@ -68,10 +68,6 @@ Kotlin: From Russia with... Nice Syntax
         - Feedback and Discussions
     - 
 05. TL;DR 
-	- This is of interest to:
-		- anyone who uses Go, Python, Ruby, Scala, Java
-		- Android developers
-		- Folks who want to dip their toe into functional concepts in a somewhat familiar space
 	- How to learn it
 		- try.kotlinlang.org
 			- Basic syntax walkthrough

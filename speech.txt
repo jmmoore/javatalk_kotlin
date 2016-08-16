@@ -59,3 +59,6 @@ The goals of the project, briefly:
 
 [Under the Hood] Briefly, I'll speak about how all of this is handled by the Java bytecode. They're simply annotations. Nullable types have the @Nullable flag, other types have the @NotNull flag.
 
+[Bits and Bobs] Having covered a lot of the big things that set Kotlin apart, before I wrap up I'll touch on a couple of other nice things that Kotlin has to offer.
+
+[Higher-Order Functions] 
