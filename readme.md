@@ -6,4 +6,4 @@ Sources.txt is an organized list of all the resources I used to create the talk.
 
 Video of the talk is here: https://www.youtube.com/watch?v=AX0Xxg7KDck
 
-Slides are available at jmmoore.tech/javatalk_kotlin, and I'll be doing my best to make them available here as well.
+Slides are available at http://jmmoore.tech/javatalk_kotlin, and I'll be doing my best to make them available here as well.
