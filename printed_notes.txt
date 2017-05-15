@@ -1,5 +1,5 @@
 On-Hand Notes
 
-jmmoore.tech/announcements for announcements
-jmmoore.tech/javatalk_kotlin for talk
+moorejm.com/announcements for announcements
+moorejm.com/javatalk_kotlin for talk
 slides.com/jmmoore/javatalk_kotlin/live as backup talk slides
